@@ -14,27 +14,35 @@ Normal Permissions (android.permission prefix)		|Dangerous Permissions (android.
 :--------------------------------------------------:| :--------------------------------:| -----------------------------:|
 ACCESS_LOCATION_EXTRA_COMMANDS 						| group.CALENDAR 					|READ_CALENDAR|
 ACCESS_NETWORK_STATE 								| 									|WRITE_CALENDAR|
+
 ACCESS_NOTIFICATION_POLICY 							| group.CAMERA 						|CAMERA|
+
 ACCESS_WIFI_STATE 									| group.CONTACTS 					|READ_CONTACTS|
 ACCESS_WIMAX_STATE 									| 									|WRITE_CONTACTS|
 BLUETOOTH 											| 									|GET_ACCOUNTS|
+
 BLUETOOTH_ADMIN 									| group.LOCATION 					|ACCESS_FINE_LOCATION|
 BROADCAST_STICKY 									| 	 								|ACCESS_COARSE_LOCATION|
+
 CHANGE_NETWORK_STATE 								| group.MICROPHONE 					|RECORD_AUDIO|
+
 CHANGE_WIFI_MULTICAST_STATE 						| group.PHONE 						|READ_PHONE_STATE|
 CHANGE_WIFI_STATE 									| 									|CALL_PHONE|
 CHANGE_WIMAX_STATE 									| 									|READ_CALL_LOG|
 DISABLE_KEYGUARD 									| 									|WRITE_CALL_LOG|
-EXPAND_STATUS_BAR 									|						|com.android.voicemail.permission.ADD_VOICEMAIL|
+EXPAND_STATUS_BAR 									|									|*ADD_VOICEMAIL|
 FLASHLIGHT 											| 									|USE_SIP|
 GET_ACCOUNTS 										| 									|PROCESS_OUTGOING_CALLS|
+
 GET_PACKAGE_SIZE 									| group.SENSORS 					|BODY_SENSORS|
+
 INTERNET 											| group.SMS 						|SEND_SMS|
 KILL_BACKGROUND_PROCESSES 							| 									|RECEIVE_SMS|
 MODIFY_AUDIO_SETTINGS 								| 									|READ_SMS|
 NFC 												| 									|RECEIVE_WAP_PUSH|
 READ_SYNC_SETTINGS 									| 									|RECEIVE_MMS|
 READ_SYNC_STATS 									| 									|READ_CALL_BROADCASTS|
+
 RECEIVE_BOOT_COMPLETED 								| group.STORAGE 					|READ_EXTERNAL_STORAGE|
 REORDER_TASKS 										| 									|WRITE_EXTERNAL_STORAGE|
 REQUEST_INSTALL_PACKAGES 							| 
@@ -47,9 +55,13 @@ USE_FINGERPRINT 									|
 VIBRATE 											| 
 WAKE_LOCK 											| 
 WRITE_SYNC_SETTINGS 								| 
-com.android.alarm.permission.SET_ALARM 				| 
-com.android.launcher.permission.INSTALL_SHORTCUT 	| 
-com.android.launcher.permission.UNINSTALL_SHORTCUT 	| 
+**SET_ALARM 										| 
+***INSTALL_SHORTCUT 								| 
+***UNINSTALL_SHORTCUT 								| 
+
+*prefix: com.android.voicemail.permission.
+**prefix: com.android.alarm.permission.
+***prefix: com.android.launcher.permission.
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

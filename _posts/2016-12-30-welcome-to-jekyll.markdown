@@ -9,44 +9,44 @@ As of Marshmallow 6.0 (API 23), Android has introduced runtime permissions model
 
 Full list of permissions by typs:
 
-Normal Permissions									|Dangerous Permissions 												||
-			 										|Permission Group					|Permissions 					|
+Normal Permissions (android.permission prefix)		|Dangerous Permissions (android.permission prefix)					||
+			 										|Permission Group(-group prefix)	|Permissions 					|
 :--------------------------------------------------:| :--------------------------------:| -----------------------------:|
-android.permission.ACCESS_LOCATION_EXTRA_COMMANDS 	| android.permission-group.CALENDAR |android.permission.READ_CALENDAR|
-android.permission.ACCESS_NETWORK_STATE 			| 									|android.permission.WRITE_CALENDAR|
-android.permission.ACCESS_NOTIFICATION_POLICY 		| android.permission-group.CAMERA 	|android.permission.CAMERA|
-android.permission.ACCESS_WIFI_STATE 				| android.permission-group.CONTACTS |android.permission.READ_CONTACTS|
-android.permission.ACCESS_WIMAX_STATE 				| 									|android.permission.WRITE_CONTACTS|
-android.permission.BLUETOOTH 						| 									|android.permission.GET_ACCOUNTS|
-android.permission.BLUETOOTH_ADMIN 					| android.permission-group.LOCATION |android.permission.ACCESS_FINE_LOCATION|
-android.permission.BROADCAST_STICKY 				| 	 								|android.permission.ACCESS_COARSE_LOCATION|
-android.permission.CHANGE_NETWORK_STATE 			| android.permission-group.MICROPHONE|android.permission.RECORD_AUDIO|
-android.permission.CHANGE_WIFI_MULTICAST_STATE 		| android.permission-group.PHONE 	|android.permission.READ_PHONE_STATE|
-android.permission.CHANGE_WIFI_STATE 				| 									|android.permission.CALL_PHONE|
-android.permission.CHANGE_WIMAX_STATE 				| 									|android.permission.READ_CALL_LOG|
-android.permission.DISABLE_KEYGUARD 				| 									|android.permission.WRITE_CALL_LOG|
-android.permission.EXPAND_STATUS_BAR 				| 							|com.android.voicemail.permission.ADD_VOICEMAIL|
-android.permission.FLASHLIGHT 						| 									|android.permission.USE_SIP|
-android.permission.GET_ACCOUNTS 					| 									|android.permission.PROCESS_OUTGOING_CALLS|
-android.permission.GET_PACKAGE_SIZE 				| android.permission-group.SENSORS 	|android.permission.BODY_SENSORS|
-android.permission.INTERNET 						| android.permission-group.SMS 		|android.permission.SEND_SMS|
-android.permission.KILL_BACKGROUND_PROCESSES 		| 									|android.permission.RECEIVE_SMS|
-android.permission.MODIFY_AUDIO_SETTINGS 			| 									|android.permission.READ_SMS|
-android.permission.NFC 								| 									|android.permission.RECEIVE_WAP_PUSH|
-android.permission.READ_SYNC_SETTINGS 				| 									|android.permission.RECEIVE_MMS|
-android.permission.READ_SYNC_STATS 					| 									|android.permission.READ_CALL_BROADCASTS|
-android.permission.RECEIVE_BOOT_COMPLETED 			| android.permission-group.STORAGE 	|android.permission.READ_EXTERNAL_STORAGE|
-android.permission.REORDER_TASKS 					| 									|android.permission.WRITE_EXTERNAL_STORAGE|
-android.permission.REQUEST_INSTALL_PACKAGES 		| 
-android.permission.SET_TIME_ZONE 					| 
-android.permission.SET_WALLPAPER 					| 
-android.permission.SET_WALLPAPER_HINTS 				| 
-android.permission.SUBSCRIBED_FEEDS_READ 			| 
-android.permission.TRANSMIT_IR 						| 
-android.permission.USE_FINGERPRINT 					| 
-android.permission.VIBRATE 							| 
-android.permission.WAKE_LOCK 						| 
-android.permission.WRITE_SYNC_SETTINGS 				| 
+ACCESS_LOCATION_EXTRA_COMMANDS 						| group.CALENDAR 					|READ_CALENDAR|
+ACCESS_NETWORK_STATE 								| 									|WRITE_CALENDAR|
+ACCESS_NOTIFICATION_POLICY 							| group.CAMERA 						|CAMERA|
+ACCESS_WIFI_STATE 									| group.CONTACTS 					|READ_CONTACTS|
+ACCESS_WIMAX_STATE 									| 									|WRITE_CONTACTS|
+BLUETOOTH 											| 									|GET_ACCOUNTS|
+BLUETOOTH_ADMIN 									| group.LOCATION 					|ACCESS_FINE_LOCATION|
+BROADCAST_STICKY 									| 	 								|ACCESS_COARSE_LOCATION|
+CHANGE_NETWORK_STATE 								| group.MICROPHONE 					|RECORD_AUDIO|
+CHANGE_WIFI_MULTICAST_STATE 						| group.PHONE 						|READ_PHONE_STATE|
+CHANGE_WIFI_STATE 									| 									|CALL_PHONE|
+CHANGE_WIMAX_STATE 									| 									|READ_CALL_LOG|
+DISABLE_KEYGUARD 									| 									|WRITE_CALL_LOG|
+EXPAND_STATUS_BAR 									|						|com.android.voicemail.permission.ADD_VOICEMAIL|
+FLASHLIGHT 											| 									|USE_SIP|
+GET_ACCOUNTS 										| 									|PROCESS_OUTGOING_CALLS|
+GET_PACKAGE_SIZE 									| group.SENSORS 					|BODY_SENSORS|
+INTERNET 											| group.SMS 						|SEND_SMS|
+KILL_BACKGROUND_PROCESSES 							| 									|RECEIVE_SMS|
+MODIFY_AUDIO_SETTINGS 								| 									|READ_SMS|
+NFC 												| 									|RECEIVE_WAP_PUSH|
+READ_SYNC_SETTINGS 									| 									|RECEIVE_MMS|
+READ_SYNC_STATS 									| 									|READ_CALL_BROADCASTS|
+RECEIVE_BOOT_COMPLETED 								| group.STORAGE 					|READ_EXTERNAL_STORAGE|
+REORDER_TASKS 										| 									|WRITE_EXTERNAL_STORAGE|
+REQUEST_INSTALL_PACKAGES 							| 
+SET_TIME_ZONE 										| 
+SET_WALLPAPER 										| 
+SET_WALLPAPER_HINTS 								| 
+SUBSCRIBED_FEEDS_READ 								| 
+TRANSMIT_IR 										| 
+USE_FINGERPRINT 									| 
+VIBRATE 											| 
+WAKE_LOCK 											| 
+WRITE_SYNC_SETTINGS 								| 
 com.android.alarm.permission.SET_ALARM 				| 
 com.android.launcher.permission.INSTALL_SHORTCUT 	| 
 com.android.launcher.permission.UNINSTALL_SHORTCUT 	| 

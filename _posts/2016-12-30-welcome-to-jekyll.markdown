@@ -11,7 +11,7 @@ Full list of permissions by typs:
 
 Normal Permissions									|Dangerous Permissions 												||
 			 										|Permission Group					|Permissions 					|
---------------------------------------------------- | :--------------------------------:| -----------------------------:|
+:--------------------------------------------------:| :--------------------------------:| -----------------------------:|
 android.permission.ACCESS_LOCATION_EXTRA_COMMANDS 	| android.permission-group.CALENDAR |android.permission.READ_CALENDAR|
 android.permission.ACCESS_NETWORK_STATE 			| 									|android.permission.WRITE_CALENDAR|
 android.permission.ACCESS_NOTIFICATION_POLICY 		| android.permission-group.CAMERA 	|android.permission.CAMERA|

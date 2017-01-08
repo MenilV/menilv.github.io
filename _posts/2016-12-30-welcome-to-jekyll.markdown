@@ -9,47 +9,47 @@ As of Marshmallow 6.0 (API 23), Android has introduced runtime permissions model
 
 Full list of permissions by typs:
 
-Normal Permissions									|Dangerous Permissions 				||
-Permissions 										|Permission Group					| Permissions|
--------------- | :-----------:
-android.permission.ACCESS_LOCATION_EXTRA_COMMANDS 	| android.permission-group.CALENDAR |android.permission.READ_CALENDAR
-android.permission.ACCESS_NETWORK_STATE| |android.permission.READ_CALENDAR|
-android.permission.ACCESS_NOTIFICATION_POLICY| android.permission-group.|
-android.permission.ACCESS_WIFI_STATE| android.permission-group.|
-android.permission.ACCESS_WIMAX_STATE| 1|1
-android.permission.BLUETOOTH| 1|2
-android.permission.BLUETOOTH_ADMIN| 1|2
-android.permission.BROADCAST_STICKY| 1|2
-android.permission.CHANGE_NETWORK_STATE| 1|2
-android.permission.CHANGE_WIFI_MULTICAST_STATE| 1|2
-android.permission.CHANGE_WIFI_STATE| 1|2
-android.permission.CHANGE_WIMAX_STATE| 1|2
-android.permission.DISABLE_KEYGUARD| 1|2
-android.permission.EXPAND_STATUS_BAR| 1|2
-android.permission.FLASHLIGHT| 1|2
-android.permission.GET_ACCOUNTS| 1|2
-android.permission.GET_PACKAGE_SIZE| 1|2
-android.permission.INTERNET| 1|2
-android.permission.KILL_BACKGROUND_PROCESSES| 1|2
-android.permission.MODIFY_AUDIO_SETTINGS| 1|2
-android.permission.NFC| 1|2
-android.permission.READ_SYNC_SETTINGS| 1|2
-android.permission.READ_SYNC_STATS| 1|2
-android.permission.RECEIVE_BOOT_COMPLETED| 1|2
-android.permission.REORDER_TASKS| 1|2
-android.permission.REQUEST_INSTALL_PACKAGES| 1|2
-android.permission.SET_TIME_ZONE| 1|2
-android.permission.SET_WALLPAPER| 1|2
-android.permission.SET_WALLPAPER_HINTS| 1|2
-android.permission.SUBSCRIBED_FEEDS_READ| 1|2
-android.permission.TRANSMIT_IR| 1|2
-android.permission.USE_FINGERPRINT| 1|2
-android.permission.VIBRATE| 1|2
-android.permission.WAKE_LOCK| 1|2
-android.permission.WRITE_SYNC_SETTINGS| 1
-com.android.alarm.permission.SET_ALARM| 1|2
-com.android.launcher.permission.INSTALL_SHORTCUT| 1|2
-com.android.launcher.permission.UNINSTALL_SHORTCUT| 1|2
+Normal Permissions									|Dangerous Permissions 												||
+			 										|Permission Group					|Permissions 					|
+--------------------------------------------------- | :--------------------------------:| -----------------------------:|
+android.permission.ACCESS_LOCATION_EXTRA_COMMANDS 	| android.permission-group.CALENDAR |android.permission.READ_CALENDAR|
+android.permission.ACCESS_NETWORK_STATE 			| 									|android.permission.WRITE_CALENDAR|
+android.permission.ACCESS_NOTIFICATION_POLICY 		| android.permission-group.CAMERA 	|android.permission.CAMERA|
+android.permission.ACCESS_WIFI_STATE 				| android.permission-group.CONTACTS |android.permission.READ_CONTACTS|
+android.permission.ACCESS_WIMAX_STATE 				| 									|android.permission.WRITE_CONTACTS|
+android.permission.BLUETOOTH 						| 									|android.permission.GET_ACCOUNTS|
+android.permission.BLUETOOTH_ADMIN 					| android.permission-group.LOCATION |android.permission.ACCESS_FINE_LOCATION|
+android.permission.BROADCAST_STICKY 				| 	 								|android.permission.ACCESS_COARSE_LOCATION|
+android.permission.CHANGE_NETWORK_STATE 			| android.permission-group.MICROPHONE|android.permission.RECORD_AUDIO|
+android.permission.CHANGE_WIFI_MULTICAST_STATE 		| android.permission-group.PHONE 	|android.permission.READ_PHONE_STATE|
+android.permission.CHANGE_WIFI_STATE 				| 									|android.permission.CALL_PHONE|
+android.permission.CHANGE_WIMAX_STATE 				| 									|android.permission.READ_CALL_LOG|
+android.permission.DISABLE_KEYGUARD 				| 									|android.permission.WRITE_CALL_LOG|
+android.permission.EXPAND_STATUS_BAR 				| 							|com.android.voicemail.permission.ADD_VOICEMAIL|
+android.permission.FLASHLIGHT 						| 									|android.permission.USE_SIP|
+android.permission.GET_ACCOUNTS 					| 									|android.permission.PROCESS_OUTGOING_CALLS|
+android.permission.GET_PACKAGE_SIZE 				| android.permission-group.SENSORS 	|android.permission.BODY_SENSORS|
+android.permission.INTERNET 						| android.permission-group.SMS 		|android.permission.SEND_SMS|
+android.permission.KILL_BACKGROUND_PROCESSES 		| 									|android.permission.RECEIVE_SMS|
+android.permission.MODIFY_AUDIO_SETTINGS 			| 									|android.permission.READ_SMS|
+android.permission.NFC 								| 									|android.permission.RECEIVE_WAP_PUSH|
+android.permission.READ_SYNC_SETTINGS 				| 									|android.permission.RECEIVE_MMS|
+android.permission.READ_SYNC_STATS 					| 									|android.permission.READ_CALL_BROADCASTS|
+android.permission.RECEIVE_BOOT_COMPLETED 			| android.permission-group.STORAGE 	|android.permission.READ_EXTERNAL_STORAGE|
+android.permission.REORDER_TASKS 					| 									|android.permission.WRITE_EXTERNAL_STORAGE|
+android.permission.REQUEST_INSTALL_PACKAGES 		| 
+android.permission.SET_TIME_ZONE 					| 
+android.permission.SET_WALLPAPER 					| 
+android.permission.SET_WALLPAPER_HINTS 				| 
+android.permission.SUBSCRIBED_FEEDS_READ 			| 
+android.permission.TRANSMIT_IR 						| 
+android.permission.USE_FINGERPRINT 					| 
+android.permission.VIBRATE 							| 
+android.permission.WAKE_LOCK 						| 
+android.permission.WRITE_SYNC_SETTINGS 				| 
+com.android.alarm.permission.SET_ALARM 				| 
+com.android.launcher.permission.INSTALL_SHORTCUT 	| 
+com.android.launcher.permission.UNINSTALL_SHORTCUT 	| 
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

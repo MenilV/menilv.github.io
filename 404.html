@@ -1,25 +1,38 @@
----
-permalink: /404.html
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    var targetDomain = "https://menilvukovic.com";
+    var path = window.location.pathname;
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+    // Split path to extract segments
+    var segments = path.split('/').filter(Boolean);
+    var lastSegment = segments[segments.length - 1];
 
-<div class="container">
-  <h1>404</h1>
+    var newURL = targetDomain + "/";
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+    if (segments.length > 0) {
+      // Known pages that map directly to the root
+      var knownPages = ['about', 'contact', 'projects', 'blog'];
+      if (knownPages.includes(lastSegment)) {
+        newURL = targetDomain + "/" + lastSegment + "/";
+      } else if (lastSegment) {
+        // Assume it is an old blog post and map to the new Eleventy slug structure
+        newURL = targetDomain + "/posts/" + lastSegment + "/";
+      }
+    }
+
+    newURL += window.location.search + window.location.hash;
+    window.location.replace(newURL);
+  </script>
+  <meta http-equiv="refresh" content="0; url=https://menilvukovic.com/">
+</head>
+<body>
+  <p>Redirecting to <a id="redirect-link" href="https://menilvukovic.com/">menilvukovic.com</a>...</p>
+  <script>
+    document.getElementById("redirect-link").href = newURL;
+  </script>
+</body>
+</html>

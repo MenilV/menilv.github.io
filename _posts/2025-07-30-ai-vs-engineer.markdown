@@ -2,13 +2,6 @@
 layout: post
 title:  "AI vs Engineer"
 date:   2025-07-30 13:10:23 +0100
-categories: ai, productivity, software, development, engineering, IT, vibe coding
-tags: ai, software, engineer, productivity
-permalink: /blog/ai-vs-engineer/
-published: true
-excerpt: "The 2025 mid-year state of affairs: productivity booster or killer?"
-author: Menil V.
-markdown: kramdown
 ---
 
 AI has been a household word for what it seems like eternity but for sure the last 3 years. The biggest milestones - depending on when your interested peaked in the topic of generative models, LLM, ML or just AI in general IMO are the following:
@@ -22,3 +15,15 @@ In the meantime it's worth noting that other companies other then OpenAI have jo
 But not just any text, the one text that's not readable to most of the planet ([0.3721% of the population](https://www.quora.com/How-many-people-on-earth-know-computer-programming)) - yes, software code. And this type of generation was easy to train as most of the knowledge lives online, and it's mostly free and accessible. Examples? Yes, Github and any other platform hosting code with public ([and maybe private?](https://news.ycombinator.com/item?id=36185372)) repositories was a contributor in training these models.
 
 So - can we enable software engineers with this tool? Can we help newcomers start? Maybe even non-technical people to get into software engineering? Or just replace all of them with agents that write code on their own. Many dissagre on answers. CEO's say models will replace people. Bots/models/agents/AI (call them however you like) will replace faulty humans that need vacations, sick leaves, mistakes to learn, time to eat, time to sleep, time to breathe air.
+
+
+layout: post
+title:  "AI vs Engineer"
+date:   2025-07-30 13:10:23 +0100
+categories: ai, productivity, software, development, engineering, IT, vibe coding
+tags: ai, software, engineer, productivity
+# permalink: /blog/ai-vs-engineer/
+published: true
+excerpt: "The 2025 mid-year state of affairs: productivity booster or killer?"
+author: Menil V.
+# markdown: kramdown
